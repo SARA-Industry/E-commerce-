@@ -91,7 +91,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .navbar {
         opacity: 0.95;
     }
@@ -1371,8 +1371,9 @@ footer {
 
 /* //........ contact ...... // */
 
-.contact {
+#contact {
     margin-top: 45px;
+    background:aqua;
 }
 
 iframe {
@@ -1433,9 +1434,9 @@ iframe {
     padding: 15px 20px;
     color: var(--grey);
     outline: none;
-    border: 1px solid var(--grey);
-    margin: 35px 15px;
-    font-size: 14px;
+    border: 1px solid black;
+    margin:  15px;
+    font-size: 12px;
 }
 
 .form .form-details textarea {
@@ -1443,7 +1444,7 @@ iframe {
     margin: 0 15px;
     color: var(--grey);
     outline: none;
-    border: 1px solid var(--grey);
+    border: 1px solid black;
     font-size: 14px;
     resize: none;
 }
@@ -1452,19 +1453,111 @@ iframe {
     padding: 15px 25px;
     color: var(--white);
     font-weight: 500;
-    background: var(--black);
+    /* background:; */
     outline: none;
     border: none;
     margin: 15px;
     font-size: 14px;
     letter-spacing: 2px;
     cursor: pointer;
+    border: 1px solid black;
 }
 
+@media (max-width:720){
 
+    .contact {
+        margin-top: 45px;
+    }
+    
+    iframe {
+        height: 72vh;
+        width: 100%;
+    }
+    
+    .form {
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 0;
+    }
+    
+    .form .form-txt {
+        flex-basis: 48%;
+    }
+    
+    .form .form-txt h4 {
+        font-weight: 600;
+        color: var(--primary-color);
+        letter-spacing: 1.5px;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .form .form-txt h1 {
+        font-weight: 600;
+        color: var(--black);
+        font-size: 40px;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+        color: var(--light-black);
+    }
+    
+    .form .form-txt span {
+        color: var(--light-black);
+        font-size: 14px;
+    }
+    
+    .form .form-txt h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 15px 0;
+        color: var(--light-black);
+    }
+    
+    .form .form-txt p {
+        color: var(--light-black);
+        font-size: 14px;
+    }
+    
+    .form .form-details {
+        flex-basis: 48%;
+    }
+    
+    .form .form-details input[type="text"],
+    .form .form-details input[type="email"] {
+        padding: 15px 20px;
+        color: var(--grey);
+        outline: none;
+        border: 1px solid var(--grey);
+        margin: 35px 15px;
+        font-size: 14px;
+    }
+    
+    .form .form-details textarea {
+        padding: 15px 20px;
+        margin: 0 15px;
+        color: var(--grey);
+        outline: none;
+        border: 1px solid var(--grey);
+        font-size: 14px;
+        resize: none;
+    }
+    
+    .form .form-details button {
+        padding: 15px 25px;
+        color: var(--white);
+        font-weight: 500;
+        background: var(--black);
+        outline: none;
+        border: none;
+        margin: 15px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+}
 /* //....... Media Queries .......// */
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
     .head {
         display: none;
     }
@@ -1522,7 +1615,7 @@ iframe {
     }
 }
 
-@media(min-width: 501px) and (max-width: 768px) {
+@media(min-width: 501px) and (max-width: 720px) {
     .head {
         display: none;
     }
@@ -1579,7 +1672,7 @@ iframe {
     }
 }
 
-@media(orientation: landscape) and (max-height: 500px) {
+@media(orientation: landscape) and (max-height: 720px) {
     .header {
         height: 90vmax;
     }
@@ -1588,7 +1681,7 @@ iframe {
 
 /* //....... Media Queries For Contact .......// */
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
     .form {
         display: flex;
         flex-direction: column;
@@ -1607,7 +1700,7 @@ iframe {
     }
 }
 
-@media(min-width: 501px) and (max-width: 768px) {
+@media(min-width: 501px) and (max-width: 720px) {
     .form {
         display: flex;
         flex-direction: column;
