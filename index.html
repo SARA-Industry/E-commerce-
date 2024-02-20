@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="SARA E-commerce.css">
+    <script>
+        let a;
+        let date;
+        let watch;
+        const options = { weekday: 'long', year:'numeric', month:'long', day:'numeric'};
+        setInterval((undefine, options) => {
+          a = new Date()
+          date = a.toDateString();
+          watch =a.getHours()+':'+a.getMinutes()+':'+a.getSeconds()
+          document.getElementById("time").innerHTML =watch+"<br> on "+date;
+        },1000);
+      </script>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <input type="checkbox" name="" id="checkbox">
+            <!-- <input type="checkbox" name="" id="checkbox">
             <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
-            </div>
+            </div> -->
             <ul class="menu-items">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sellers">Shop</a></li>
                 <li><a href="#news">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="Login.page.html">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -32,39 +45,58 @@
             <div class="home_txt ">
                 <p class="collectio ">SUMMER COLLECTION</p>
                 <h2>FALL - WINTER<br>Collection 2023</h2>
-                <div class="home_label ">
-                    <p>A specialist label creating luxury essentials. Ethically crafted<br>with an unwavering commitment to exceptional quality.</p>
-                </div>
                 <button><a href="#sellers">SHOP NOW</a><i class='bx bx-right-arrow-alt'></i></button>
-                <div class="home_social_icons">
+                <dive class="home_social_icons">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-twitter'></i></a>
                     <a href="#"><i class='bx bxl-pinterest'></i></a>
                     <a href="#"><i class='bx bxl-instagram'></i></a>
                 </div>
             </div>
+            <div class="current_time"> <h1 class="display-5 fw-bold"style="font-size: 20px solid black;">Current time Is: <span id="time"></span></h1></div>
         </div>
     </section>
 
     <section id="collection">
-        <div class="collections container">
+        <div class="collections">
             <div class="content">
-                <img src="https://i.postimg.cc/Xqmwr12c/clothing.webp" alt="img" />
+                <img class="imgs" src="https://i.postimg.cc/Xqmwr12c/clothing.webp" alt="img" />
                 <div class="img-content">
                     <p>Clothing Collections</p>
                     <button><a href="#sellers">SHOP NOW</a></button>
                 </div>
             </div>
-            <div class="content2">
-                <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="img" />
-                <div class="img-content2">
+            <div class="content">
+                <img class="imgs" src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="img" />
+                <div class="img-content">
                     <p>Shoes Spring</p>
                     <button><a href="#sellers">SHOP NOW</a></button>
                 </div>
             </div>
-            <div class="content3">
-                <img src="https://i.postimg.cc/MHv7KJYp/access.webp" alt="img" />
-                <div class="img-content3">
+            <div class="content">
+                <img class="imgs" src="https://i.postimg.cc/MHv7KJYp/access.webp" alt="img" />
+                <div class="img-content">
+                    <p>Accessories</p>
+                    <button><a href="#sellers">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <img class="imgs" src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/z/q/u/xxl-tr9-vebnor-original-imagx332zyx3en6c.jpeg?q=70" alt="img" />
+                <div class="img-content">
+                    <p>Clothing Collections</p>
+                    <button><a href="#sellers">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <img class="imgs" src="https://rukminim2.flixcart.com/image/612/612/xif0q/suit/f/v/u/-original-imagsrf8sjpups5w.jpeg?q=70" alt="img" />
+                <div class="img-content">
+                    <p>Shoes Spring</p>
+                    <button><a href="#sellers">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <img class="imgs" src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/k/a/m-nioinoienvoinvonqmxpcmrw-tee-gallery-original-imagvuk8ygjnfgtx.jpeg?q=70" alt="img" />
+                <div class="img-content">
                     <p>Accessories</p>
                     <button><a href="#sellers">SHOP NOW</a></button>
                 </div>
@@ -106,6 +138,220 @@
                 </div>
                 <div class="best-p1">
                     <img src="https://i.postimg.cc/76X9ZV8m/Screenshot_from_2022-06-03_18-45-12.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Jacket</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="price">
+                            &dollar;17.24
+                            <div class="colors">
+                                <i class='bx bxs-circle green'></i>
+                                <i class='bx bxs-circle grey'></i>
+                                <i class='bx bxs-circle brown'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/6/m/m/l-st27-vebnor-original-imagtyvhhersjfwr.jpeg?q=70" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Shirt</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="price">
+                            &dollar;27.24
+                            <div class="colors">
+                                <i class='bx bxs-circle brown'></i>
+                                <i class='bx bxs-circle green'></i>
+                                <i class='bx bxs-circle blue'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/suit/u/f/h/-original-imags8hfehnqvk5g.jpeg?q=70" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Shoes</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <div class="price">
+                            &dollar;43.67
+                            <div class="colors">
+                                <i class='bx bxs-circle red'></i>
+                                <i class='bx bxs-circle grey'></i>
+                                <i class='bx bxs-circle blue'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/blazer/m/i/v/m-blazer-428-sfoty-original-imagrvcrdrhqj7qg.jpeg?q=70" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Shoes</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="price">
+                            &dollar;37.24
+                            <div class="colors">
+                                <i class='bx bxs-circle red'></i>
+                                <i class='bx bxs-circle blue'></i>
+                                <i class='bx bxs-circle white'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                        </div>
+                        <!-- <div class="add-cart">
+                            <button>Add To Cart</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/t/a/b/-original-imagg5v2z7eb7fup.jpeg?q=70" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Jacket</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="price">
+                            &dollar;17.24
+                            <div class="colors">
+                                <i class='bx bxs-circle green'></i>
+                                <i class='bx bxs-circle grey'></i>
+                                <i class='bx bxs-circle brown'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/v/2/6/-original-imaggcb4kn7qjpbh.jpeg?q=70" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Shirt</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="price">
+                            &dollar;27.24
+                            <div class="colors">
+                                <i class='bx bxs-circle brown'></i>
+                                <i class='bx bxs-circle green'></i>
+                                <i class='bx bxs-circle blue'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/l27wtjk0/cap/b/c/d/free-baseball-casual-cap-sport-collection-original-imagdm29vtct8ddb.jpeg?q=70" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Shoes</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <div class="price">
+                            &dollar;43.67
+                            <div class="colors">
+                                <i class='bx bxs-circle red'></i>
+                                <i class='bx bxs-circle grey'></i>
+                                <i class='bx bxs-circle blue'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/y/k/xl-fc4455-fastcolors-original-imagpzmanamedpd5.jpeg?q=70" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Shoes</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="price">
+                            &dollar;37.24
+                            <div class="colors">
+                                <i class='bx bxs-circle red'></i>
+                                <i class='bx bxs-circle blue'></i>
+                                <i class='bx bxs-circle white'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                        </div>
+                        <!-- <div class="add-cart">
+                            <button>Add To Cart</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sunglass/p/9/l/l-as-3026-5-12747-aislin-original-imaghzyygdhkvp5h.jpeg?q=70" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
                             <p>PS England Jacket</p>
@@ -403,72 +649,22 @@
             </div>
         </div>
     </section>
-    <section id="news">
-        <div class="news-heading">
-            <p>LATEST NEWS</p>
-            <h2>Fashion New Trends</h2>
-        </div>
-        <div class="l-news container">
-            <div class="l-news1">
-                <div class="news1-img">
-                    <img src="https://i.postimg.cc/2y6wbZCm/news1.jpg" alt="img">
-                </div>
-                <div class="news1-conte">
-                    <div class="date-news1">
-                        <p><i class='bx bxs-calendar'></i> 12 February 2022</p>
-                        <h4>What Curling Irons Are The Best Ones</h4>
-                        <a href="https://www.vogue.com/article/best-curling-irons" target="_blank">read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="l-news2">
-                <div class="news2-img">
-                    <img src="https://i.postimg.cc/9MXPK7RT/news2.jpg" alt="img">
-                </div>
-                <div class="news2-conte">
-                    <div class="date-news2">
-                        <p><i class='bx bxs-calendar'></i> 17 February 2022</p>
-                        <h4>The Health Benefits Of Sunglasses</h4>
-                        <a href="https://www.rivieraopticare.com/blog/314864-the-health-benefits-of-wearing-sunglasses_2/" target="_blank">read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="l-news3">
-                <div class="news3-img">
-                    <img src="https://i.postimg.cc/x1KKdRLM/news3.jpg" alt="img">
-                </div>
-                <div class="news3-conte">
-                    <div class="date-news3">
-                        <p><i class='bx bxs-calendar'></i> 26 February 202</p>
-                        <h4>Eternity Bands Do Last Forever</h4>
-                        <a href="https://www.briangavindiamonds.com/news/eternity-bands-symbolize-love-that-lasts-forever/" target="_blank">read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contact container">
-            <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.63246820495!2d79.64164640892744!3d24.876399295154165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398297e0409c5955%3A0x643b9594727eb250!2sPandit%20Dev%20Prabhakar%20Shastri%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1708168970853!5m2!1sen!2sin" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+ 
+    <section id="contact"><h style=" font-size: 50px; margin-left: 42%; background-color: antiquewhite; ">
+        Contact Us</h></div>
         <form action="https://formspree.io/f/mnqejdrv" method="POST">
             <div class="form">
                 <div class="form-txt">
                     <h4>INFORMATION</h4>
-                    <h1>Contact Us</h1>
                     <span>As you might expect of a company that began as a high-end interiors contractor, we pay strict
                         attention.</span>
-                        <h3>USA</h3>ss
-                    <p>195 E Parker Square Dr, Parker, CO 801<br>+43 982-314-0958</p>
-                    <h3>India</h3>
-                    <p>HW95+C9C, Lorem ipsum dolor sit.<br>411014</p>
+                        <h3>INDIA</h3>
+                    <p>Pt. dev prabhakar dev shastri college of tachnology Gathewra chhatarpur (M.P.)<br>+91 808584####</p>
                 </div>
                 <div class="form-details">
-                    <input type="text" name="name" id="name" placeholder="Name" required>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea>
+                  <h1 id="fill"> Name <input type="text" name="name" id="name" placeholder="Name" required></h1>
+                  <h1 id="fill"> Email <input type="email" name="email" id="email" placeholder="Email" required></h1><br>
+                  <h1 id="fill">Message  <br><textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea></h1><br>
                     <button>SEND MESSAGE</button>
                 </div>
             </div>
@@ -478,9 +674,9 @@
     <footer>
         <div class="footer-container container">
             <div class="content_1">
-                <img src="https://i.postimg.cc/htGyQ4JB/footer-logo.png" alt="logo">
+                <img class="img1" src="data:image/jpeg;base64,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" alt="logo">
                 <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
-                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards">
+                <img class="img2" src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards">
             </div>
             <div class="content_2">
                 <h4>SHOPPING</h4>
@@ -491,24 +687,15 @@
             </div>
             <div class="content_3">
                 <h4>SHOPPING</h4>
-                <a href="./contact.html">Contact Us</a>
-                <a href="https://payment-method-sb.netlify.app/" target="_blank">Payment Method</a>
-                <a href="https://delivery-status-sb.netlify.app/" target="_blank">Delivery</a>
-                <a href="https://codepen.io/sandeshbodake/full/Jexxrv" target="_blank">Return and Exchange</a>
-            </div>
-            <div class="content_4">
-                <h4>NEWLETTER</h4>
-                <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
-                <div class="f-mail">
-                    <input type="email" placeholder="Your Email">
-                    <i class='bx bx-envelope'></i>
-                </div>
-                <hr>
+                <a href="/contact.html">Contact Us</a>
+                <a href="/payment.html" target="_blank">Payment Method</a> 
+                <a href="/Delivery.html" target="_blank">Delivery</a>
+                <a href="/RaE.html" target="_blank">Return and Exchange</a>
             </div>
         </div>
         <div class="f-design">
             <div class="f-design-txt container">
-                <p>Design and Code by code.sanket</p>
+                <p>Design and Code by code.team</p>
             </div>
         </div>
     </footer>
