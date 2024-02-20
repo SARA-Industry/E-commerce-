@@ -247,7 +247,7 @@
 }
 
 .img-content button:hover~.img-content a {
-    color: var(--primary-color);
+    color: rgb(253, 189, 189);
 }
 
 .img-content a:hover {
