@@ -224,10 +224,10 @@
 
 .img-content p {
     font-size: 1.6rem;
+    color: white;
 }
 
 .img-content button {
-    border: none;
     background-color: var(--primary-color);
     color: var(--white);
     border-radius: 10px;
@@ -243,11 +243,12 @@
 
 .img-content button:hover {
     background: var(--white);
-    color: var(--primary-color);
+    color: white;
 }
 
 .img-content button:hover~.img-content a {
     color: rgb(253, 189, 189);
+    
 }
 
 .img-content a:hover {
