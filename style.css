@@ -96,14 +96,14 @@
 .home_txt {
     position: absolute;
     top: 37%;
-    left: 5%;
+    left: 2%;
     width: 30%;
     transform: translate( -10%);
 }
 .current_time{
     position: absolute;
     top: 37%;
-    left: 35%;
+    left: 50%;
     width: 30%;
 }
 .home_txt p {
@@ -143,7 +143,7 @@
 .home_txt button:hover {
     background-color:navajowhite;
     font-weight: 600;
-    color: rgb(253, 189, 189);
+    color: var(--white);
     padding: 10px 20px;
     font-size: 14px;
     letter-spacing: 2px;
@@ -247,8 +247,7 @@
 }
 
 .img-content button:hover~.img-content a {
-    color: rgb(253, 189, 189);
-    
+    color: var(--primary-color);
 }
 
 .img-content a:hover {
@@ -540,7 +539,12 @@ footer {
     margin-top: 45px;
     background:aqua;
 }
-
+.Cheader{
+    font-size: 50px;
+    align-items: center;
+    background-color: antiquewhite;
+    margin-left: 10%;
+}
 iframe {
     height: 72vh;
     width: 100%;
@@ -554,6 +558,7 @@ iframe {
 
 .form .form-txt {
     flex-basis: 48%;
+    padding-left: 5%;
 }
 
 .form .form-txt h4 {
@@ -592,6 +597,8 @@ iframe {
 
 .form .form-details {
     flex-basis: 48%;
+    padding-left: 5%;
+    padding-top: 20px;
 }
 
 .form .form-details input[type="text"],
@@ -715,15 +722,15 @@ iframe {
 
 .home_txt {
     position: absolute;
-    top: 10%;
-    left: 2%;
-    width: 30%;
+    top: 9%;
+    left: 7%;
+    width: 60%;
 }
 .current_time{
     position: absolute;
-    top: 10%;
-    left: 33%;
-    width: 30%;
+    top: 9%;
+    left: 60%;
+    width: 40%;
 }
 .home_txt p {
     color: var(--primary-color);
@@ -733,10 +740,10 @@ iframe {
 }
 
 .home_txt h2 {
-    font-size: 2.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    line-height: 53px;
-    letter-spacing: 3px;
+    line-height: 35px;
+    letter-spacing: 2px;
     font-weight: 600;
     color: var(--light-black);
 }
@@ -1336,6 +1343,7 @@ iframe {
     display: flex;
     justify-content: space-between;
     margin: 80px 0;
+    flex-wrap: wrap;
 }
 
 .form .form-txt {
